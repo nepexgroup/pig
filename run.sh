@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 export LLVM_TOOLCHAIN=$(lli --print-toolchain-path)
 $LLVM_TOOLCHAIN/clang++ -shared cpppart.cpp -lpolyglot-mock -o cpppart || exit
 
